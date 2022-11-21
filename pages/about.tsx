@@ -19,11 +19,13 @@ export default function About(){
     return (
         <div>
         <button onClick={event => refetch}>refetch</button>
-        {data.data.map((post:post) => 
-            <li key={post.id}>
-                <Image src={post.avatar} height={72} width={72} alt=""/>
-                <p>{post.first_name}</p></li>
-            )}
+        <ul>
+            {data.data.map((post:post) => 
+                <li key={post.id}>
+                    <img src={post.avatar} height={72} width={72} alt=""/>
+                    <p>{post.first_name}</p></li>
+                )}
+            </ul>
         </div>
     )
 } 
