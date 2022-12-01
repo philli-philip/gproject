@@ -59,6 +59,7 @@ const Home = () => {
           </span>
         </a>
         <Link href='/about' className='text-md'>About</Link>
+        <Link href='/questions' className='text-md'>Questioono</Link>
       </footer>
     </div>
   )
